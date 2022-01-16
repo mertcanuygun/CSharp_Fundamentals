@@ -17,26 +17,29 @@ namespace _01_Introduction
             InitializeComponent();
         }
 
-        private void btn_dairehesapla_Click(object sender, EventArgs e)
+        private void btn_circleCalc_Click(object sender, EventArgs e)
         {
-            double yaricap = Convert.ToDouble(txt_yaricap.Text);
+            double radius = Convert.ToDouble(txt_radius.Text);
             double pi = 3.14;
-            double cevre = 2 * pi * yaricap;
-            double alan = pi * (yaricap * yaricap);
+            double perimeter = 2 * pi * radius;
+            double area = pi * (radius * radius);
 
 
-            lbl_cevresi.Text = Math.Round(cevre).ToString();
-            lbl_alani.Text = Math.Round(alan).ToString();
+            lbl_perimeter.Text = Math.Round(perimeter).ToString();
+            lbl_area.Text = Math.Round(area).ToString();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_calcNumberOfTerms_Click(object sender, EventArgs e)
         {
-            float ilk_terim = float.Parse(txt_ilkterim.Text);
-            float son_terim = float.Parse(txt_sonterim.Text);
-            float artis = float.Parse(txt_artismikt.Text);
 
-            float terim_sayisi = (son_terim - ilk_terim) / artis + 1;
-            MessageBox.Show($"Terim Sayısı={terim_sayisi}");
+            //Calculating number of terms
+
+            float first_term = float.Parse(txt_firstTerm.Text);
+            float last_term = float.Parse(txt_lastTerm.Text);
+            float common_diff = float.Parse(txt_commonDiff.Text);
+
+            float number_of_terms = (last_term - first_term) / common_diff + 1;
+            MessageBox.Show($"Number of Terms ={number_of_terms}");
 
         }
     }
