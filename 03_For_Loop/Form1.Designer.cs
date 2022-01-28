@@ -33,10 +33,10 @@
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txt_variable_1 = new System.Windows.Forms.TextBox();
-            this.txt_variable_2 = new System.Windows.Forms.TextBox();
-            this.btn_example2 = new System.Windows.Forms.Button();
             this.listBox3 = new System.Windows.Forms.ListBox();
+            this.btn_example2 = new System.Windows.Forms.Button();
+            this.txt_variable_2 = new System.Windows.Forms.TextBox();
+            this.txt_variable_1 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -69,6 +69,7 @@
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(212, 354);
             this.listBox2.TabIndex = 2;
+
             // 
             // groupBox1
             // 
@@ -95,19 +96,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Example 2";
             // 
-            // txt_variable_1
+            // listBox3
             // 
-            this.txt_variable_1.Location = new System.Drawing.Point(43, 53);
-            this.txt_variable_1.Name = "txt_variable_1";
-            this.txt_variable_1.Size = new System.Drawing.Size(180, 31);
-            this.txt_variable_1.TabIndex = 0;
-            // 
-            // txt_variable_2
-            // 
-            this.txt_variable_2.Location = new System.Drawing.Point(43, 115);
-            this.txt_variable_2.Name = "txt_variable_2";
-            this.txt_variable_2.Size = new System.Drawing.Size(180, 31);
-            this.txt_variable_2.TabIndex = 1;
+            this.listBox3.FormattingEnabled = true;
+            this.listBox3.ItemHeight = 25;
+            this.listBox3.Location = new System.Drawing.Point(43, 175);
+            this.listBox3.Name = "listBox3";
+            this.listBox3.Size = new System.Drawing.Size(355, 304);
+            this.listBox3.TabIndex = 4;
             // 
             // btn_example2
             // 
@@ -119,14 +115,19 @@
             this.btn_example2.UseVisualStyleBackColor = true;
             this.btn_example2.Click += new System.EventHandler(this.btn_example2_Click);
             // 
-            // listBox3
+            // txt_variable_2
             // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 25;
-            this.listBox3.Location = new System.Drawing.Point(43, 175);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(355, 304);
-            this.listBox3.TabIndex = 4;
+            this.txt_variable_2.Location = new System.Drawing.Point(43, 115);
+            this.txt_variable_2.Name = "txt_variable_2";
+            this.txt_variable_2.Size = new System.Drawing.Size(180, 31);
+            this.txt_variable_2.TabIndex = 1;
+            // 
+            // txt_variable_1
+            // 
+            this.txt_variable_1.Location = new System.Drawing.Point(43, 53);
+            this.txt_variable_1.Name = "txt_variable_1";
+            this.txt_variable_1.Size = new System.Drawing.Size(180, 31);
+            this.txt_variable_1.TabIndex = 0;
             // 
             // Form1
             // 

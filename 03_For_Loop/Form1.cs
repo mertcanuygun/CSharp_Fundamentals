@@ -48,12 +48,19 @@ namespace _03_For_Loop
 
             double numbers = 0;
 
-            for (double i = Convert.ToInt32(txt_variable_1.Text); i <= Convert.ToInt32(txt_variable_2.Text); i++)
+            if (txt_variable_1.Text == "" || txt_variable_2.Text == "")
             {
-                numbers += i;
-                listBox3.Items.Add(i);
+                MessageBox.Show("Please enter some numbers");
             }
-            MessageBox.Show($"{numbers}");
+            else
+            {
+              for (double i = Convert.ToInt32(txt_variable_1.Text); i <= Convert.ToInt32  (txt_variable_2.Text); i++)
+              {
+                  numbers += i;
+                  listBox3.Items.Add(i);
+              }
+              MessageBox.Show($"Total of those numbers are = {numbers}");
+            }
         }
     }
 }
