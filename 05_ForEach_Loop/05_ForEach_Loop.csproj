@@ -7,7 +7,7 @@
     <ProjectGuid>{72998E49-3037-4B82-86D3-5347220F325B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>_05_ForEach_Loop</RootNamespace>
-    <AssemblyName>_05_ForEach_Loop</AssemblyName>
+    <AssemblyName>05_ForEach_Loop</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
